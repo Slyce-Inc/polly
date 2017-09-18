@@ -65,7 +65,7 @@ endif()
 
 set(IPHONEOS_ARCHS armv7;armv7s;arm64)
 set(IPHONESIMULATOR_ARCHS i386;x86_64)
-set(CMAKE_XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS "$(OTHER_CFLAGS) -fvisibility=hidden NO")
+set(CMAKE_XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS "$(OTHER_CFLAGS) -fvisibility=hidden")
 
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/xcode.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/os/iphone.cmake")
