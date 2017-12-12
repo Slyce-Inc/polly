@@ -11,7 +11,7 @@ include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_clear_environment_variables.c
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_init.cmake")
 
-set(IOS_SDK_VERSION 11.1)
+#set(IOS_SDK_VERSION 11.0)  # commenting this out is win i think
 set(IOS_DEPLOYMENT_SDK_VERSION 8.0)
 
 set(POLLY_XCODE_COMPILER "clang")
@@ -63,7 +63,7 @@ else()
   endif()
 endif()
 
-set(IPHONEOS_ARCHS armv7;armv7s;arm64)
+set(IPHONEOS_ARCHS armv7;arm64)
 set(IPHONESIMULATOR_ARCHS i386;x86_64)
 # set(CMAKE_XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS "$(OTHER_CFLAGS) -fvisibility=hidden")
 
