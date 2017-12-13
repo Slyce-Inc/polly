@@ -1,22 +1,23 @@
-# Copyright (c) 2014-2017, Ruslan Baratov
+# Copyright (c) 2017, Ruslan Baratov
 # All rights reserved.
 
-if(DEFINED POLLY_IOS_NOCODESIGN_10_3_DEP_9_0_BITCODE_CMAKE_)
+if(DEFINED POLLY_IOS_NOCODESIGN_11_1_DEP_9_0_WO_ARMV7S_BITCODE_CXX11_CMAKE_)
   return()
 else()
-  set(POLLY_IOS_NOCODESIGN_10_3_DEP_9_0_BITCODE_CMAKE_ 1)
+  set(POLLY_IOS_NOCODESIGN_11_1_DEP_9_0_WO_ARMV7S_BITCODE_CXX11_CMAKE_ 1)
 endif()
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_clear_environment_variables.cmake")
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_init.cmake")
 
-set(IOS_SDK_VERSION 10.3)
+set(IOS_SDK_VERSION 11.1)
 set(IOS_DEPLOYMENT_SDK_VERSION 9.0)
 
 set(POLLY_XCODE_COMPILER "clang")
 polly_init(
     "iOS ${IOS_SDK_VERSION} / Deployment ${IOS_DEPLOYMENT_SDK_VERSION} / Universal (iphoneos + iphonesimulator) / \
+armv7 arm64 / i386 x86_64 / \
 ${POLLY_XCODE_COMPILER} / \
 No code sign / \
 bitcode / \
@@ -35,7 +36,7 @@ set(CMAKE_MACOSX_BUNDLE YES)
 
 include("${CMAKE_CURRENT_LIST_DIR}/flags/ios_nocodesign.cmake")
 
-set(IPHONEOS_ARCHS armv7;armv7s;arm64)
+set(IPHONEOS_ARCHS armv7;arm64)
 set(IPHONESIMULATOR_ARCHS i386;x86_64)
 
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/xcode.cmake")
