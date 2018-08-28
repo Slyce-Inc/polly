@@ -545,6 +545,7 @@ if platform.system() == 'Darwin':
       Toolchain('ios-nocodesign-11-4-dep-9-3', 'Xcode', ios_version='11.4', nocodesign=True),
       Toolchain('ios-nocodesign-11-4-dep-9-3-arm64', 'Xcode', ios_version='11.4', nocodesign=True),
       Toolchain('ios-nocodesign-dep-9-0-cxx14', 'Xcode', nocodesign=True),
+      Toolchain('ios-nocodesign-dep-8-4-bitcode', 'Xcode', nocodesign=True),
       Toolchain('xcode', 'Xcode'),
       Toolchain('xcode-cxx98', 'Xcode'),
       Toolchain('xcode-nocxx', 'Xcode'),
