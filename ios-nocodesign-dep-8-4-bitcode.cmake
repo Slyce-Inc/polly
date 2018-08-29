@@ -24,6 +24,7 @@ c++11 support"
     "Xcode"
 )
 
+
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_common.cmake")
 
 include(polly_fatal_error)
@@ -66,8 +67,6 @@ endif()
 
 set(IPHONEOS_ARCHS armv7;arm64)
 set(IPHONESIMULATOR_ARCHS i386;x86_64)
-# set(CMAKE_XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS "$(OTHER_CFLAGS) -fvisibility=hidden")
-set_property(GLOBAL PROPERTY XCODE_EMIT_EFFECTIVE_PLATFORM_NAME ON)
 
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/xcode.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/os/iphone.cmake")
