@@ -1,4 +1,5 @@
 # Copyright (c) 2014-2017, Ruslan Baratov
+# Copyright (c) 2018-Present, Andy Mroczkowski
 # All rights reserved.
 
 
