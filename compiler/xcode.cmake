@@ -30,4 +30,7 @@ endif()
 
 set(CMAKE_XCODE_ATTRIBUTE_CC "${_compiler_path}")
 
+# Xcode puts Debug and Release builds in separate directories
+set(CMAKE_DEBUG_POSTFIX "")
+
 polly_status_debug("Compiler: ${_compiler_path}")
